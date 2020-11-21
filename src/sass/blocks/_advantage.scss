@@ -12,6 +12,7 @@
     }
     &_wrapper {
         display: flex;
+        flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
         margin-top: 65px;
@@ -35,14 +36,17 @@
         margin-top: 38px;
     }
     &_descr {
-        width: 247px;
+        display: block;
+        width: 238px;
         color: #0d0d0d;
         font-size: 14px;
         font-weight: 300;
         line-height: normal;
         text-align: center;
         margin-top: 26px;
-        
+        a {
+            color: #ff0000;
+        }
 
     }
 }
