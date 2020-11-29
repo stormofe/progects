@@ -78,8 +78,15 @@
             line-height: 10px;
         }
         &__icons {
-            margin-top: 50px;
+            width: auto;
+            margin: 20px auto 10px auto;
+            transform: none;
         }
+
+        &__icon {
+            margin-right: 15px;
+        }
+
         .button {
             margin-bottom: 20px;
         }
@@ -124,9 +131,16 @@
         }
     }
     .feed {
+        .title {
+            margin-bottom: 40px;
+            font-size: 25px;
+        }
         &__item {
             flex-direction: column;
             align-items: center;
+        }
+        &__img {
+            margin-top: 20px;
         }
         &__subtitle {
             text-align: center;
@@ -134,9 +148,83 @@
         &__count {
             text-align: center;
         }
-        &__descr {
-            width: 350px;
-            margin: 0 auto;
+        &__text {
+            margin: 20px 0 20px 0;
         }
+        &__descr {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .promo {
+        .header {
+            flex-direction: column;
+
+            &__official {
+                margin-top: 10px;
+            }
+        }
+        &__wrapper {
+            margin-top: 20px;
+        }
+        &__header {
+            text-align: center;
+        }
+        &__subheader {
+            font-size: 15px;
+        }
+        &__icon {
+            width: 50%;
+            height: 50%;
+        }
+        .button_main {
+            margin-top: 20px;
+        }
+        &__link {
+            margin-top: 25px;
+        }
+    }
+    .consultation {
+        .title {
+            font-size: 22px;
+        }
+    }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+        }
+        &__tab {
+            margin-top: 10px;
+        }
+        &-item__subtitle {
+            font-size: 20px;
+        }
+        &-item__descr {
+            font-size: 16px;
+        }
+        &-item__list {
+            font-size: 15px;
+        }
+    }
+    .feed {
+        &__descr {
+            width: 50%;
+        }
+    }
+    .footer {
+        &__info {
+            width: 100%;
+            padding: 10px 10px 10px 10px;
+            height: auto;
+        }
+        &__addr {
+            margin-bottom: 20px;
+        }
+    }
+    .pageup {
+        left: 20px;
     }
 }
